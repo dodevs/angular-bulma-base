@@ -3,8 +3,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { RouterModule } from '@angular/router';
-
-import { MatIconModule } from '@angular/material';
+import { MaterialModule } from '../shared/material/material.module';
 
 @NgModule({
     declarations: [
@@ -14,7 +13,7 @@ import { MatIconModule } from '@angular/material';
     ],
     imports: [
         RouterModule,
-        MatIconModule
+        MaterialModule
     ],
     exports: [
         LayoutComponent
